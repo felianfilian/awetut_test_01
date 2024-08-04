@@ -5,7 +5,16 @@ using UnityEngine;
 public class Player
 {
     public int health { get; set; }
-    string name;
+
+    private string name;
+    public string Name {
+        get {
+            return name;
+        }
+        set {
+            name = value;
+        } 
+    }
 
     public Player() { }
 

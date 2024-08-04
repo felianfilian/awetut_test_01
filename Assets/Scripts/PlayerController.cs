@@ -8,7 +8,7 @@ public class PlayerController : MonoBehaviour
     public float speed = 10f;
     void Start()
     {
-        Player warrior = new Player(30, "warrior");
+        Player warrior = new Warrior(30, "warrior");
         warrior.ShowInfo();
         warrior.health = 50;
         warrior.ShowInfo();

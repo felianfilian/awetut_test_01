@@ -11,6 +11,7 @@ public class PlayerController : MonoBehaviour
         Player warrior = new Player(30, "warrior");
         warrior.ShowInfo();
         warrior.health = 50;
+        warrior.ShowInfo();
 
     }
 

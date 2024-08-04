@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
@@ -7,7 +8,9 @@ public class PlayerController : MonoBehaviour
     public float speed = 10f;
     void Start()
     {
-        Player palyer = new Player();
+        Player warrior = new Player(30, "warrior");
+        warrior.ShowInfo();
+
     }
 
     // Update is called once per frame

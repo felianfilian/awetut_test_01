@@ -4,8 +4,11 @@ using UnityEngine;
 
 public class Player
 {
-    int health;
+    public int health { get; set; }
     string name;
+
+    public Player() { }
+
     public Player(int health, string name)
     {
         this.health = health;
@@ -15,7 +18,6 @@ public class Player
 
     public void ShowInfo()
     {
-        Debug.Log(health);
-        Debug.Log(name);
+        Debug.Log("Health: " + health + " - Name: " + name);
     }
 }
